@@ -18,6 +18,7 @@ prometheusPuppetdbSd:
     output.method: k8s-secret
     output.k8s-secret.secret-name: prometheus-puppetdb-sd-output
     output.k8s-secret.secret-key: puppetdb-sd.yml
+  outputSecretNamespaceOverride: ""
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
